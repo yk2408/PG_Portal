@@ -1,0 +1,32 @@
+from django.conf.urls import url
+from app.views import (home, login_view, register_view, 
+                        logout_view, review_list, review_list1, 
+                        review_list2, review_list3, review_list4,
+                        booking_detail, booking_update, booking_delete, 
+                        room_detail, room_detail1, room_detail2, 
+                        room_detail3, about, gallery, 
+                        blog, faq, check_availibility, 
+                        room_details)
+
+urlpatterns = [
+    url(r'^$', home, name='home'),
+    url(r'^review_list/$', review_list, name='review_list'),
+    url(r'^review_list/1star$', review_list1, name='review_list1'),
+    url(r'^review_list/2star$', review_list2, name='review_list2'),
+    url(r'^review_list/3star$', review_list3, name='review_list3'),
+    url(r'^review_list/4star$', review_list4, name='review_list4'),
+    url(r'^(?P<id>\d+)/$', booking_detail, name='booking_detail'),
+  	url(r'^(?P<id>\d+)/update/$', booking_update, name='booking_update'),
+  	url(r'^(?P<id>\d+)/delete/$', booking_delete, name='booking_delete'),
+    url(r'^login/', login_view, name='login'),
+    url(r'^logout/', logout_view, name='logout'),
+    url(r'^room_details/', room_details, name='room_details'),
+    url(r'^room_detail1/', room_detail1, name='room_detail1'),
+    url(r'^room_detail2/', room_detail2, name='room_detail2'),
+    url(r'^room_detail3/', room_detail3, name='room_detail3'),
+    url(r'^about/', about, name='about'),
+    url(r'^gallery/', gallery, name='gallery'),
+    url(r'^blog/', blog, name='blog'),
+    url(r'^faq/', faq, name='faq'),
+    url(r'^check_availibility/', check_availibility, name='check_availibility'),
+]   
