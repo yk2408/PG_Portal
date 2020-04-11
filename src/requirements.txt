@@ -13,5 +13,5 @@ markdown2==2.3.5
 Pillow==2.9.0
 PyJWT==1.6.1
 pytz==2018.3
-requests==2.18.4
+requests==2.20.0
 urllib3==1.22
