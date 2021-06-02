@@ -9,7 +9,7 @@ django-registration-redux==1.2
 djangorestframework==3.3.3
 djangorestframework-jwt==1.8.0
 idna==2.6
-markdown2==2.3.5
+markdown2==2.4.0
 Pillow==2.9.0
 PyJWT==1.6.1
 pytz==2018.3
